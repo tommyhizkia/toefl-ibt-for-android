@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:id="@+id/linear_mainscreen"
+    android:background="@drawable/background_main">
+    
+    
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <ImageButton 
+            android:id="@+id/bnReading"
+            android:src="@drawable/icon_reading_transparent"
+            android:scaleType="fitCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginRight="50dip"
+            android:onClick="showReading"/>
+        
+        <ImageButton 
+            android:id="@+id/bnSpeaking"
+            android:src="@drawable/icon_speaking_transparent"
+            android:scaleType="fitCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginLeft="50dip"
+            android:onClick="showSpeaking"/>"
+    </LinearLayout>
+    
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <ImageButton 
+    	    android:id="@+id/bnListening"
+    	    android:src="@drawable/icon_listening_transparent"
+    	    android:scaleType="fitCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginTop="50dip"
+            android:layout_marginRight="50dip"
+            android:onClick="showListening"/>
+    	
+    	<ImageButton 
+    	    android:id="@+id/bnWriting"
+    	    android:src="@drawable/icon_writing_transparent"
+    	    android:scaleType="fitCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginTop="50dip"
+            android:layout_marginLeft="50dip"
+            android:onClick="showWriting"/>
+    </LinearLayout>
+
+</LinearLayout>

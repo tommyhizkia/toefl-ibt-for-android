@@ -18,6 +18,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <activity android:launchMode="standard"
+            android:name=".MainScreen">
+        </activity>
+        
+        <activity android:launchMode="standard"
+            android:name=".reading.Reading_DangCauHoi">
+        </activity>
+        
+        <activity android:launchMode="standard"
+            android:name=".reading.Reading_Practice">
+        </activity>
+        
+        <activity android:launchMode="standard"
+            android:name=".reading.Reading_Main"
+            android:screenOrientation="landscape">
+        </activity>
     </application>
 
 </manifest>
