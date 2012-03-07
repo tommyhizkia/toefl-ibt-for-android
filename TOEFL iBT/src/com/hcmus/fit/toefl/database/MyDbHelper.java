@@ -59,6 +59,8 @@ public class MyDbHelper extends SQLiteOpenHelper {
 			+ "              TenDangThi TEXT);";
 
 	private static final String DoanVan = "CREATE TABLE DoanVan (MaDoanVan INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,"
+			+ "				 MaBaiThi INTEGER,"
+			+ "				 NoiDungDoanVan TEXT,"
 			+ "              NoiDungDoanVan BLOB);";
 
 	private static final String KetQuaThi = "CREATE TABLE KetQuaThi (MaKetQuaThi INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,"
