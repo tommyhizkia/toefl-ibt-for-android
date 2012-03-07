@@ -4,5 +4,9 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" 
     android:background="@drawable/background_boot">
-
+	
+	<ImageView android:id="@+id/imgMainCover"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:layout_gravity="center" />
 </LinearLayout>
