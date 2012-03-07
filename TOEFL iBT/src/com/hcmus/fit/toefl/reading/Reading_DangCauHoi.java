@@ -42,5 +42,6 @@ public class Reading_DangCauHoi extends ListActivity{
 		// TODO Auto-generated method stub
 //		super.onBackPressed();
 		startActivity(new Intent(this, MainScreen.class));
+		overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
 	}
 }
