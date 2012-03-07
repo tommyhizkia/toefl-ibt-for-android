@@ -22,7 +22,7 @@ public class MainActivity extends Activity {
     	// TODO Auto-generated method stub
     	Intent newIntent = new Intent(this, MainScreen.class);
     	startActivity(newIntent);
-    	overridePendingTransition(R.anim.scaledown, R.anim.scaleup);
+    	overridePendingTransition(R.anim.scaleup, R.anim.scaledown);
     	return super.onTouchEvent(event);
     }
 }
