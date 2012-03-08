@@ -1,38 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" 
-    android:orientation="vertical"
-    android:background="@drawable/background">
-    <TextView 
-        android:id="@+id/tv_timer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Time is here"/>
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
 
-    <LinearLayout 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time is here" />
+        
+        <Chronometer android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format="MM:SS"/>
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:orientation="horizontal">
-        <WebView 
+        android:orientation="horizontal" >
+
+        <WebView
             android:id="@+id/wv_reading"
             android:layout_width="600dp"
-            android:layout_height="fill_parent"/>
-        
-        <TextView 
+            android:layout_height="fill_parent" />
+
+        <TextView
             android:layout_width="10dp"
             android:layout_height="fill_parent"
-            android:background="@color/black"/>
-        
-        <LinearLayout 
+            android:background="@color/black" />
+
+        <LinearLayout
             android:layout_width="fill_parent"
-        	android:layout_height="fill_parent"
-        	android:orientation="vertical">
-            <TextView 
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="what is here?????"
-                android:textColor="#000000"/>
+                android:textColor="#000000" />
         </LinearLayout>
     </LinearLayout>
+
 </LinearLayout>
